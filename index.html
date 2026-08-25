@@ -3,98 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlo James Ungria - Portfolio</title>
+    <title>Carlo James Ungria - Mechanical Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="sidebar-header">
-            <h2>☕ CJ</h2>
-            <p>Optimizing Systems. Delivering Impact.</p>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#capstone">Capstone Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </aside>
+    <!-- Floating Top Navigation -->
+    <header class="navbar">
+        <div class="nav-brand">⚙️ CJ Ungria</div>
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#capstone">Capstone</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+    </header>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
+    <main class="container">
         
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <span class="greeting">Hello, I'm</span>
-            <h1>Carlo James A. Ungria (CJ)</h1>
-            <h2>Mechanical Engineering Graduate<br>& Technical Systems Enthusiast</h2>
-            <p>Bridging the gap between theory and practical engineering solutions through analytical thinking, rigorous design, and problem-solving to build a sustainable future.</p>
-            <a href="#projects" class="btn">Explore My Portfolio &rarr;</a>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-badge">Mechanical Engineering Graduate</div>
+            <h1>Carlo James A. Ungria</h1>
+            <p class="hero-subtitle">Optimizing thermal systems, fluid machinery, and mechanical designs to engineer practical, sustainable solutions.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects &rarr;</a>
+                <a href="#contact" class="btn secondary">Get in Touch</a>
+            </div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Section -->
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am a graduating Mechanical Engineering student at the Technological Institute of the Philippines - Manila. Passionate about thermal systems, energy conversion, and machine design, I also take pride in leadership, having served as the Mayor of the ME Department Student Council, and actively competing in inter-scholastic quiz bees.</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Academic Background</h3>
+                    <p>Graduating Mechanical Engineering student at the Technological Institute of the Philippines - Manila with a heavy academic focus on thermodynamics, fluid machinery, psychrometrics, and machine design.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Leadership & Extracurriculars</h3>
+                    <p>Served as the Mayor of the ME Department Student Council (2025–2026). Active competitive quizzer representing the school in inter-scholastic mechanical engineering quiz bees, and a passionate peer tutor.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="card-grid">
-                <div class="card">
+            <h2 class="section-title">Engineering Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="tag">Industrial Design</span>
                     <h3>Metal Dust Control System</h3>
-                    <p>Designed a metal dust control and collection system specifically tailored for grinding machines at Arrem Industries.</p>
+                    <p>Designed a specialized metal dust control and collection system engineered specifically for grinding machines at Arrem Industries.</p>
                 </div>
-                <div class="card">
+                <div class="project-card">
+                    <span class="tag">HVAC & Thermal Systems</span>
                     <h3>HVAC Thermal & Piping System</h3>
-                    <p>Engineered a complete HVAC thermal and piping design layout for a three-storey building located in Tagaytay.</p>
+                    <p>Engineered a comprehensive thermal and piping layout design for a three-storey building located in Tagaytay.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Capstone Projects Section -->
+        <!-- Capstone Section -->
         <section id="capstone" class="section">
-            <h2>Capstone Projects</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Two-Buoy Wave Energy Converter</h3>
-                    <p>Developed an innovative wave energy converter utilizing a horizontal linear generator configuration to optimize clean power generation.</p>
-                </div>
+            <h2 class="section-title">Capstone Project</h2>
+            <div class="featured-card">
+                <span class="tag">Featured Research</span>
+                <h3>Two-Buoy Wave Energy Converter</h3>
+                <p>Developed an innovative wave energy harvesting concept utilizing a horizontal linear generator configuration to optimize green power conversion efficiency.</p>
             </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <p>Add your professional certifications, specialized training, or board exam preparation milestones here.</p>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Thermodynamics & Psychrometrics</li>
-                <li>Fluid Machinery & Power Plant Engineering</li>
-                <li>HVAC System Design</li>
-                <li>Machine Design & CAD</li>
-                <li>Technical Problem Solving & Tutoring</li>
-            </ul>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Thermodynamics & Psychrometrics</div>
+                <div class="skill-item">Fluid Machinery & Power Plants</div>
+                <div class="skill-item">HVAC System Design</div>
+                <div class="skill-item">Machine Design & CAD</div>
+                <div class="skill-item">Technical Problem Solving</div>
+                <div class="skill-item">Scientific Calculator Proficiency</div>
+            </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Get in touch for collaborations, engineering inquiries, or professional networking.</p>
-            <p><strong>Email:</strong> your.email@example.com</p>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>Ready for professional opportunities, engineering collaborations, and board exam preparation networking.</p>
+            <a href="mailto:your.email@example.com" class="btn primary">Send an Email</a>
         </section>
 
     </main>
+
+    <footer>
+        <p>&copy; 2026 Carlo James A. Ungria. Built with GitHub Pages.</p>
+    </footer>
 
 </body>
 </html>
