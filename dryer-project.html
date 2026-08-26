@@ -1,98 +1,217 @@
-# REZIDAC: Hybrid Biomass-Solar Agricultural Dryer with Zeolite-Based Moisture Regulation
+<!-- REZIDAC Case Study Layout Matching Portfolio Standard with Exact Sidebar Flow -->
+<div class="case-study-container">
 
-<!-- REZIDAC Case Study Table of Contents / Outline Structure -->
-<nav class="case-study-outline">
-    <ul>
-        <li><a href="#executive-summary">Executive Summary</a></li>
-        <li><a href="#problem-statement">Problem Statement</a></li>
-        <li><a href="#project-background--context">Project Background & Context</a></li>
-        <li><a href="#objectives">Objectives</a></li>
-        <li><a href="#design-constraints--criteria">Design Constraints & Criteria</a></li>
-        <li><a href="#design-alternative-1">Design Alternative 1</a></li>
-        <li><a href="#design-alternative-2">Design Alternative 2</a></li>
-        <li><a href="#design-alternative-3">Design Alternative 3</a></li>
-        <li><a href="#evaluation--trade-off-analysis">Evaluation & Trade-Off Analysis</a></li>
-        <li><a href="#selected-final-design">Selected Final Design</a></li>
-        <li><a href="#methodology--tools">Methodology & Tools</a></li>
-        <li><a href="#results--performance-validation">Results & Performance Validation</a></li>
-        <li><a href="#conclusions--recommendations">Conclusions & Recommendations</a></li>
-        <li><a href="#technical-highlights">Technical Highlights</a></li>
-        <li><a href="#skills-applied">Skills Applied</a></li>
-    </ul>
-</nav>
+    <!-- Top Badges / Metadata -->
+    <div class="project-header-badges">
+        <span class="badge category">Agricultural Engineering & Renewable Energy</span>
+        <span class="badge status">Completed</span>
+        <span class="badge tech">SolidWorks • CFD • Psychrometrics</span>
+    </div>
 
----
+    <h1>REZIDAC — Hybrid Biomass-Solar Agricultural Dryer with Zeolite Moisture Regulation</h1>
+    <p class="subtitle">Engineering Capstone Project — End-to-End Mechanical Design & Thermal Performance Validation Case Study</p>
 
-## Executive Summary
-Post-harvest losses remain a critical vulnerability for local agricultural systems due to weather unpredictability and inefficient traditional drying practices. **REZIDAC** is a hybrid biomass-solar agricultural dryer integrated with solid-state zeolite moisture regulation to stabilize drying rates and preserve crop quality. Incorporating physical prototyping, thermodynamic evaluation, and fluid flow validation, the system achieves a strong economic return on investment (ROI) of **36.2%** within its first year, demonstrating high technical feasibility and economic viability for agricultural communities.
+    <!-- Sidebar Navigation with Exact Items -->
+    <nav class="case-study-sidebar">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#executive-summary">Executive Summary</a></li>
+            <li><a href="#problem-statement">Problem Statement</a></li>
+            <li><a href="#project-background-context">Project Background & Context</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#design-constraints-criteria">Design Constraints & Criteria</a></li>
+            <li><a href="#design-alternative-1">Design Alternative 1</a></li>
+            <li><a href="#design-alternative-2">Design Alternative 2</a></li>
+            <li><a href="#design-alternative-3">Design Alternative 3</a></li>
+            <li><a href="#evaluation-trade-off-analysis">Evaluation & Trade-Off Analysis</em></a></li>
+            <li><a href="#selected-final-design">Selected Final Design</a></li>
+            <li><a href="#methodology-tools">Methodology & Tools</em></a></li>
+            <li><a href="#results-performance-validation">Results & Performance Validation</a></li>
+            <li><a href="#conclusions-recommendations">Conclusions & Recommendations</a></li>
+            <li><a href="#technical-highlights">Technical Highlights</a></li>
+            <li><a href="#skills-applied">Skills Applied</a></li>
+        </ul>
+    </nav>
 
-## Problem Statement
-Traditional drying approaches (such as open-sun drying) leave agricultural yields heavily exposed to sudden precipitation, environmental contaminants, and uncontrolled moisture fluctuations leading to spoilage or over-drying. Conventional mechanical dryers often suffer from excessive specific energy consumption and heavy reliance on continuous fossil fuels or grid power. A resilient, cost-effective hybrid drying mechanism is required to maintain consistent thermal output and relative humidity control regardless of ambient weather shifts.
+    <!-- Main Content Flow -->
+    <main class="case-study-content">
 
-## Project Background & Context
-Agricultural sectors frequently experience heavy financial losses during peak harvest seasons due to insufficient weather-resilient post-harvest processing infrastructure. REZIDAC was developed to resolve these challenges by coupling solar thermal energy harvesting with a backup biomass furnace, supplemented by a regenerative zeolite adsorption bed for precision humidity control.
+        <!-- Executive Summary -->
+        <section id="executive-summary" class="card">
+            <h2>Executive Summary</h2>
+            <p>Agricultural sectors face severe post-harvest losses due to weather unpredictability, high ambient humidity, and inefficient drying options[cite: 2]. REZIDAC is an engineered hybrid biomass-solar agricultural dryer integrated with a 5 kg solid-state zeolite adsorption bed for precision humidity regulation[cite: 2]. This project transforms raw agricultural thermodynamic requirements into a robust mechanical system, stabilizing drying parameters, preventing product over-drying, and achieving a calculated <strong>36.2% ROI</strong> within the first year[cite: 2].</p>
+            
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <span class="metric-value">36.2%</span>
+                    <span class="metric-label">Project ROI[cite: 2]</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">2,502.58 kJ/kg</span>
+                    <span class="metric-label">Specific Energy Consumption[cite: 2]</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">5.0 kg</span>
+                    <span class="metric-label">Zeolite Bed Mass[cite: 2]</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value">45°C</span>
+                    <span class="metric-label">Target Drying Temp[cite: 2]</span>
+                </div>
+            </div>
+        </section>
 
-## Objectives
-* **Primary Objective:** Engineer and validate a hybrid biomass-solar agricultural dryer equipped with a zeolite matrix to minimize post-harvest losses and optimize drying efficiency.
-* **Secondary Objectives:**
-  * Maintain target drying chamber thermal thresholds under varying weather conditions.
-  * Regulate internal vapor pressure deficits to prevent crop case-hardening.
-  * Validate structural and fluid behavior via computational tools prior to physical deployment.
-  * Achieve a high financial return with a fast payback period (targeting an ROI over 35%).
+        <!-- Problem Statement -->
+        <section id="problem-statement" class="card">
+            <h2>Problem Statement</h2>
+            <p>Traditional drying approaches (such as open-sun drying) leave agricultural yields heavily exposed to sudden precipitation, environmental contaminants, and uncontrolled moisture fluctuations leading to spoilage or over-drying. Conventional mechanical dryers often suffer from excessive specific energy consumption and heavy reliance on continuous fossil fuels or grid power. A resilient, cost-effective hybrid drying mechanism is required to maintain consistent thermal output and relative humidity control regardless of ambient weather shifts.</p>
+        </section>
 
-## Design Constraints & Criteria
-* **Thermal Constraints:** Must sustain operation during low-insolation periods via the biomass furnace backup.
-* **Manufacturing Criteria:** Must utilize locally available fabrication materials to keep costs low and support local manufacturability.
-* **Psychrometric Criteria:** Internal air velocity and relative humidity must be maintained at optimal thresholds across stacked product trays.
+        <!-- Project Background & Context -->
+        <section id="project-background-context" class="card">
+            <h2>Project Background & Context</h2>
+            <p>During peak harvesting seasons, local farmers experience heavy economic losses because open-sun drying leaves crops susceptible to sudden rain, contamination, and fluctuating humidity[cite: 2]. REZIDAC was conceptualized to provide a resilient, localized, and energy-efficient post-harvest processing unit that blends renewable solar thermal energy with reliable backup biomass combustion[cite: 2].</p>
+        </section>
 
-## Design Alternative 1
-* **Direct-Mode Open Solar Dryer:** A purely solar-driven configuration utilizing flat-plate collectors to direct ambient air straight into the drying chamber without supplementary heaters.
-  * *Pros:* Zero fuel cost; simple architecture.
-  * *Cons:* Entirely vulnerable to cloud cover, rain, and nocturnal humidity swings.
+        <!-- Objectives -->
+        <section id="objectives" class="card">
+            <h2>Objectives</h2>
+            <ul>
+                <li>Design a hybrid biomass-solar agricultural dryer to mitigate weather dependency[cite: 2].</li>
+                <li>Integrate a solid-state zeolite desiccant bed to dynamically regulate humidity and eliminate moisture spikes[cite: 2].</li>
+                <li>Validate thermal efficiency, fluid behavior, and structural integrity through advanced CFD simulations[cite: 2].</li>
+                <li>Ensure strong economic viability with a rapid payback period and high return on investment[cite: 2].</li>
+            </ul>
+        </section>
 
-## Design Alternative 2
-* **Standalone Biomass-Fired Forced Convection Dryer:** A system powered exclusively by a biomass combustion furnace and a forced convection blower.
-  * *Pros:* Complete weather independence and continuous high thermal power.
-  * *Cons:* High biomass consumption rates and risk of localized overheating without precise mixing.
+        <!-- Design Constraints & Criteria -->
+        <section id="design-constraints-criteria" class="card">
+            <h2>Design Constraints & Criteria</h2>
+            <ul>
+                <li><strong>Thermal Stability:</strong> Must maintain a steady drying temperature around 45°C despite ambient meteorological shifts[cite: 2].</li>
+                <li><strong>Material Availability:</strong> Must utilize locally accessible fabrication components to support low-cost manufacturing[cite: 2].</li>
+                <li><strong>Psychrometric Criteria:</strong> Air velocity and vapor pressure deficits must be controlled to prevent crop case-hardening.</li>
+            </ul>
+        </section>
 
-## Design Alternative 3
-* **Hybrid Solar-Biomass Dryer with Zeolite Regulation (Selected Design):** A dual-source thermal system combining a solar air heater and a biomass furnace, integrated with a secondary zeolite adsorption bed to buffer moisture levels.
-  * *Pros:* Weather-resilient, highly energy-efficient, and prevents over-drying spikes using solid-state desiccant buffering.
-  * *Cons:* Higher initial system design complexity.
+        <!-- Design Alternative 1 -->
+        <section id="design-alternative-1" class="card">
+            <h2>Design Alternative 1</h2>
+            <p><strong>Direct-Mode Open Solar Dryer:</strong> A purely solar-driven configuration utilizing flat-plate collectors to direct ambient air straight into the drying chamber without supplementary heaters.</p>
+            <ul>
+                <li><em>Pros:</em> Zero fuel cost; simple architecture.</li>
+                <li><em>Cons:</em> Entirely vulnerable to cloud cover, rain, and nocturnal weather changes.</li>
+            </ul>
+        </section>
 
-## Evaluation & Trade-Off Analysis *(to compare your alternatives against your criteria)*
+        <!-- Design Alternative 2 -->
+        <section id="design-alternative-2" class="card">
+            <h2>Design Alternative 2</h2>
+            <p><strong>Standalone Biomass-Fired Forced Convection Dryer:</strong> A system powered exclusively by a biomass combustion furnace and a forced convection blower.</p>
+            <ul>
+                <li><em>Pros:</em> Complete weather independence and continuous high thermal power.</li>
+                <li><em>Cons:</em> High biomass consumption rates and risk of localized overheating without precise mixing.</li>
+            </ul>
+        </section>
 
-| Evaluation Criteria | Alternative 1: Open Solar | Alternative 2: Standalone Biomass | Alternative 3: Hybrid + Zeolite (Selected) |
-| :--- | :--- | :--- | :--- |
-| **Weather Independence** | Low | High | **High** |
-| **Energy Efficiency** | High (Free solar) | Low (High fuel load) | **Optimized (Blended sources)** |
-| **Humidity Control Precision** | Poor | Moderate | **High (Zeolite-regulated)** |
-| **Economic Viability** | Moderate | Moderate | **High (36.2% ROI)** |
+        <!-- Design Alternative 3 -->
+        <section id="design-alternative-3" class="card">
+            <h2>Design Alternative 3</h2>
+            <p><strong>Hybrid Solar-Biomass Dryer with Zeolite Regulation:</strong> A dual-source thermal system combining a solar air heater and a biomass furnace, integrated with a secondary zeolite adsorption bed to buffer moisture levels[cite: 2].</p>
+            <ul>
+                <li><em>Pros:</em> Weather-resilient, highly energy-efficient, and prevents over-drying spikes using solid-state desiccant buffering[cite: 2].</li>
+                <li><em>Cons:</em> Higher initial system design complexity.</li>
+            </ul>
+        </section>
 
-## Selected Final Design
-The **Hybrid Solar-Biomass Dryer with Zeolite Regulation (Alternative 3)** was chosen as the final system architecture. By blending solar-heated air with auxiliary biomass heat and routing the stream through a $5\text{ kg}$ zeolite bed[cite: 2], the system guarantees steady drying air parameters and protects product integrity across all operational cycles.
+        <!-- Evaluation & Trade-Off Analysis -->
+        <section id="evaluation-trade-off-analysis" class="card">
+            <h2>Evaluation & Trade-Off Analysis <em>(to compare your alternatives against your criteria)</em></h2>
+            <table class="trade-off-table">
+                <thead>
+                    <tr>
+                        <th>Evaluation Criteria</th>
+                        <th>Alternative 1</th>
+                        <th>Alternative 2</th>
+                        <th>Alternative 3 (Selected)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Weather Independence</strong></td>
+                        <td>Low</td>
+                        <td>High</td>
+                        <td><strong>High</strong>[cite: 2]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Energy Efficiency</strong></td>
+                        <td>High (Free solar)</td>
+                        <td>Low (High fuel load)</td>
+                        <td><strong>Optimized (Blended sources)</strong>[cite: 2]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Humidity Control Precision</strong></td>
+                        <td>Poor</td>
+                        <td>Moderate</td>
+                        <td><strong>High (Zeolite-regulated)</strong>[cite: 2]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Economic Viability</strong></td>
+                        <td>Moderate</td>
+                        <td>Moderate</td>
+                        <td><strong>High (36.2% ROI)</strong>[cite: 2]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-## Methodology & Tools *(e.g., SolidWorks, CFD Analysis, calculations)*
-* **CAD Modeling:** Detailed 3D assemblies and sheet metal fabrication drawings created using **SolidWorks** and **AutoCAD**.
-* **CFD Analysis:** Computational Fluid Dynamics simulations deployed to evaluate internal velocity contours, pressure distributions, and thermal profiles inside the plenum.
-* **Thermodynamic Calculations:** Mathematical balancing of heat transfer rates, mass flow requirements, and specific energy consumption (SEC).
+        <!-- Selected Final Design -->
+        <section id="selected-final-design" class="card">
+            <h2>Selected Final Design</h2>
+            <p><strong>Design Alternative 3</strong> was chosen as the optimal architecture. It integrates a solar thermal air collector, an auxiliary biomass furnace, and a 5 kg secondary zeolite bed to deliver consistent thermal performance and moisture regulation across all operational cycles[cite: 2].</p>
+        </section>
 
-## Results & Performance Validation
-* **Thermodynamic Performance:** Successfully elevated ambient air to target drying thresholds while stabilizing relative humidity swings.
-* **Specific Energy Consumption:** Achieved an operational SEC of approximately **$2,502.58\text{ kJ/kg}$ of evaporated water**[cite: 2].
-* **Economic Analysis:** Confirmed an attractive **36.2% Return on Investment (ROI)** within the first operational year.
-* **CFD Flow Validation:** Verified smooth, uniform airflow distribution with minimal dead zones inside the drying chamber.
+        <!-- Methodology & Tools -->
+        <section id="methodology-tools" class="card">
+            <h2>Methodology & Tools <em>(e.g., SolidWorks, CFD Analysis, calculations)</em></h2>
+            <ul>
+                <li><strong>SolidWorks & AutoCAD:</strong> Utilized for 3D modeling, sheet metal layouts, and mechanical assembly drafting[cite: 2].</li>
+                <li><strong>Computational Fluid Dynamics (CFD):</strong> Deployed to simulate internal velocity vectors, pressure drops, and thermal distribution patterns[cite: 2].</li>
+                <li><strong>Thermodynamic Modeling:</strong> Hand-calculated psychrometric state changes, mass flow rates, and specific energy consumption metrics[cite: 2].</li>
+            </ul>
+        </section>
 
-## Conclusions & Recommendations
-* **Conclusions:** REZIDAC successfully bridges the gap between renewable energy utilization and dependable agricultural processing by integrating solar, biomass, and desiccant technologies.
-* **Recommendations:** Future iterations should incorporate IoT-based sensor automation for real-time monitoring and automated zeolite regeneration scheduling.
+        <!-- Results & Performance Validation -->
+        <section id="results-performance-validation" class="card">
+            <h2>Results & Performance Validation</h2>
+            <p>Performance testing and computational models confirmed that the system achieves an operational Specific Energy Consumption (SEC) of approximately <strong>2,502.58 kJ/kg of evaporated water</strong>[cite: 2], paired with uniform airflow distribution across the drying chamber trays validated via CFD[cite: 2].</p>
+        </section>
 
-## Technical Highlights
-* Dual-source thermal integration blending solar thermal collectors and biomass combustion.
-* Solid-state zeolite matrix integration for precision relative humidity control.
-* Rigorous pre-prototype validation using advanced CFD and thermodynamic formulations.
+        <!-- Conclusions & Recommendations -->
+        <section id="conclusions-recommendations" class="card">
+            <h2>Conclusions & Recommendations</h2>
+            <p>REZIDAC successfully bridges the gap between renewable energy harvesting and reliable crop processing[cite: 2]. Future upgrades should incorporate automated IoT sensor feedback for real-time valve control and automated zeolite regeneration cycles.</p>
+        </section>
 
-## Skills Applied
-* Mechanical and thermal system design (psychrometrics, heat exchangers, fluid machinery).
-* Computer-Aided Engineering (SolidWorks 3D modeling and CFD simulation).
-* Capital budgeting, cost-benefit analysis, and engineering economics (ROI calculation).
+        <!-- Technical Highlights -->
+        <section id="technical-highlights" class="card">
+            <h2>Technical Highlights</h2>
+            <ul>
+                <li>Dual-source thermal integration blending solar collectors and biomass combustion[cite: 2].</li>
+                <li>Solid-state zeolite bed architecture for dynamic relative humidity buffering[cite: 2].</li>
+                <li>Comprehensive pre-prototype validation using advanced CFD and psychrometric balancing[cite: 2].</li>
+            </ul>
+        </section>
+
+        <!-- Skills Applied -->
+        <section id="skills-applied" class="card">
+            <h2>Skills Applied</h2>
+            <ul>
+                <li>Mechanical & Thermal System Design (Psychrometrics, Heat Exchangers, Fluid Machinery)[cite: 2].</li>
+                <li>Computer-Aided Engineering (SolidWorks 3D Modeling & CFD Simulation)[cite: 2].</li>
+                <li>Engineering Economics & Capital Budgeting (ROI & Cost-Benefit Analysis)[cite: 2].</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
