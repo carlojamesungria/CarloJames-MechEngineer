@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of the HVAC Thermal System of a Three-Storey Building in Tagaytay City | Carlo James A. Ungria</title>
+</head>
+<body style="background-color: #0b0f19; color: #f3f4f6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 40px 20px;">
+
+    <div class="container" style="max-width: 1100px; margin: 0 auto;">
+        
+        <!-- Back Button -->
+        <a href="index.html" style="display: inline-block; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f3f4f6; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 500; margin-bottom: 30px;">
+            &larr; Back to Portfolio
+        </a>
+
+        <!-- Tags & Title Header -->
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <span style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Mechanical Engineering & HVAC Design</span>
+                <span style="background: rgba(34, 197, 94, 0.1); color: #22c55e; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Completed</span>
+                <span style="background: rgba(255, 255, 255, 0.05); color: #9ca3af; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">AutoCAD • Cooling Load Calculation • Psychrometrics</span>
+            </div>
+            <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: #ffffff; margin-bottom: 15px; line-height: 1.2;">
+                Design of the HVAC Thermal System of Three-Storey Building in Tagaytay City
+            </h1>
+            <p style="font-size: 1.1rem; color: #9ca3af;">
+                Capstone Engineering Design Project — End-to-End Thermal Load Analysis, Refrigerant Piping Layout, and Energy-Efficient Climate Control Case Study
+            </p>
+        </div>
+
+        <!-- Layout Grid: Table of Contents on Left, Content on Right -->
+        <div style="display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: start;" class="case-study-grid">
+            
+            <!-- Left Sidebar: Contents Matching Exact Flow -->
+            <div style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 25px; position: sticky; top: 20px;">
+                <h3 style="color: #ffffff; font-size: 1.1rem; margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Contents</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="#executive-summary" style="color: #9ca3af; text-decoration: none;">Executive Summary</a></li>
+                    <li><a href="#problem-statement" style="color: #9ca3af; text-decoration: none;">Problem Statement</a></li>
+                    <li><a href="#project-background" style="color: #9ca3af; text-decoration: none;">Project Background & Context</a></li>
+                    <li><a href="#objectives" style="color: #9ca3af; text-decoration: none;">Objectives</a></li>
+                    <li><a href="#constraints" style="color: #9ca3af; text-decoration: none;">Design Constraints & Criteria</a></li>
+                    <li><a href="#floor-1" style="color: #9ca3af; text-decoration: none;">First Floor Layout & Design</a></li>
+                    <li><a href="#floor-2" style="color: #9ca3af; text-decoration: none;">Second Floor Layout & Design</a></li>
+                    <li><a href="#floor-3" style="color: #9ca3af; text-decoration: none;">Third Floor Layout & Design</a></li>
+                    <li><a href="#cooling-load" style="color: #9ca3af; text-decoration: none;">Cooling Load Calculation Highlights</a></li>
+                    <li><a href="#methodology" style="color: #9ca3af; text-decoration: none;">Methodology & Tools <em>(AutoCAD, ASHRAE standards)</em></a></li>
+                    <li><a href="#validation" style="color: #9ca3af; text-decoration: none;">Results & Performance Summary</a></li>
+                    <li><a href="#conclusions" style="color: #9ca3af; text-decoration: none;">Conclusions & Recommendations</a></li>
+                    <li><a href="#highlights" style="color: #9ca3af; text-decoration: none;">Technical Highlights</a></li>
+                    <li><a href="#skills" style="color: #9ca3af; text-decoration: none;">Skills Applied</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Main Content Area -->
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Executive Summary -->
+                <section id="executive-summary" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Executive Summary</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 20px;">
+                        Rapid urbanization and tourism growth in Tagaytay City have driven an unprecedented surge in commercial building construction, resulting in rising energy consumption despite the area's naturally cooler high-altitude climate[cite: 3]. This project engineers an energy-efficient Heating, Ventilation, and Air Conditioning (HVAC) thermal system and comprehensive refrigerant piping layout for a mixed-use three-storey office building located along Akle Street, Kaybagal South[cite: 3]. Through rigorous ASHRAE-based cooling load calculations and precise AutoCAD drafting, the total building cooling load was determined to be **43.28 TR (519,420.16 BTU/hr)**, managed via strategic zoning with dual-inverter split and floor-mounted air conditioning units[cite: 3].
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 25px;">
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">43.28 TR</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Grand Building Cooling Load[cite: 3]</div>
+                        </div>
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">3 Storeys</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Mixed-Use Office & Event Facility[cite: 3]</div>
+                        </div>
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">₱955,000</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Total Equipment Cost Breakdown[cite: 3]</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem Statement -->
+                <section id="problem-statement" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Problem Statement</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        Although Tagaytay City benefits from a temperate cool tropical highland climate (mean annual temperature ~22.7°C compared to Manila's ~27.7°C), commercial establishments face severe energy management challenges[cite: 3]. Uncontrolled urbanization, tourist influxes, and dense multi-occupancy schedules (ranging from daily admin operations to high-density events in the third-floor event hall) cause high electricity bills, excessive carbon footprints, and inconsistent indoor thermal comfort[cite: 3]. Without a tailored HVAC design prioritizing precise load profiling and moisture mitigation under high humidity (84% average relative humidity), buildings risk severe operational inefficiencies[cite: 3].
+                    </p>
+                </section>
+
+                <!-- Project Background & Context -->
+                <section id="project-background" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Project Background & Context</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        The project site is situated along Akle Street, Kaybagal South, Tagaytay City (elevation ~650 meters above sea level)[cite: 3]. The building features a multi-functional architectural layout: the **first floor** houses the reception lobby, guest rooms, admin office, control room, and pantry; the **second floor** contains three professional office rooms and a conference room; and the **third floor** is dedicated to a large event hall, a presidential office, and a secondary conference room[cite: 3]. 
+                    </p>
+                </section>
+
+                <!-- Objectives -->
+                <section id="objectives" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Objectives</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Provide a comprehensive AutoCAD layout plan for piping, split-type, and floor-mounted air-conditioning units integrated into the 3-storey building[cite: 3].</li>
+                        <li>Calculate specific cooling and heating loads for each floor based on ASHRAE standards, occupancy profiles, and Tagaytay weather data[cite: 3].</li>
+                        <li>Select appropriate inverter air-conditioning units based on room dimensions, sensible/latent heat gains, and usage profiles[cite: 3].</li>
+                        <li>Incorporate proper ventilation rates and closed-cell elastomeric foam insulation to control high indoor humidity and prevent condensation[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Design Constraints & Criteria -->
+                <section id="constraints" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Design Constraints & Criteria</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>Regulatory Compliance:</strong> Strict adherence to the Philippine National Building Code (PD 1096), Philippine Green Building Code, PSME Code, and DENR Refrigeration Code[cite: 3].</li>
+                        <li><strong>ASHRAE Benchmarks:</strong> Integration of ASHRAE Standard 55 (Adaptive Thermal Comfort), ASHRAE Standard 62.1 (Ventilation), and ASHRAE Standard 90.1 (Energy Efficiency)[cite: 3].</li>
+                        <li><strong>Moisture & Condensation Control:</strong> Mitigation of high humidity (84% RH, ~22°C dew point) using vapor-tight elastomeric insulation over seamless copper piping[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- First Floor -->
+                <section id="floor-1" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">First Floor Layout & Design</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 15px;">
+                        The first floor serves as the primary gateway for clients and occupants, accommodating the main lobby, pantry, admin office, and control room[cite: 3]. 
+                    </p>
+                    <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
+                        <img src="Figure 1-2. The first floor of the proposed building." alt="First Floor AutoCAD Piping Layout" style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <ul style="color: #9ca3af; padding-left: 20px;">
+                        <li><em>Lobby:</em> Equipped with a high-capacity **3.5 HP Floor-Mounted Unit** (₱125,000) to handle open-area foot traffic[cite: 3].</li>
+                        <li><em>Admin & Control Rooms:</em> Each fitted with a **1.0 HP Wall-Mounted Inverter Unit** (₱30,000 each) for precise individual thermal control[cite: 3].</li>
+                        <li><em>Pantry:</em> Serviced by a **1.5 HP Wall-Mounted Unit** (₱45,000) to offset heavy equipment and appliance heat gains[cite: 3].</li>
+                        <li><em>Cooling Load Total:</em> **151,605.84 BTU/hr** (including 10% safety factor), equivalent to **12.63 TOR**[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Second Floor -->
+                <section id="floor-2" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Second Floor Layout & Design</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 15px;">
+                        The second floor is partitioned into three professional private offices and a shared conference room dedicated to daily administrative workflows[cite: 3].
+                    </p>
+                    <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
+                        <img src="Figure 1-3. The second floor of the proposed building." alt="Second Floor AutoCAD Piping Layout" style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <ul style="color: #9ca3af; padding-left: 20px;">
+                        <li><em>Offices 1 & 2:</em> Conditioned via **1.0 HP Wall-Mounted Inverter Units** (₱30,000 each)[cite: 3].</li>
+                        <li><em>Office 3 & Conference Room:</em> Fitted with **1.5 HP Wall-Mounted Units** (₱45,000 each) to accommodate higher group occupancy[cite: 3].</li>
+                        <li><em>Cooling Load Total:</em> **74,152.99 BTU/hr** (including 10% safety factor), equivalent to **6.17 TOR**[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Third Floor -->
+                <section id="floor-3" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Third Floor Layout & Design</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 15px;">
+                        The third floor houses high-occupancy and executive areas, featuring a large assembly event hall with a stage, a secondary conference room, and the Office of the President[cite: 3].
+                    </p>
+                    <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 15px;">
+                        <img src="Figure 1-4. The third floor of the proposed building." alt="Third Floor AutoCAD Piping Layout" style="width: 100%; height: auto; display: block;">
+                    </div>
+                    <ul style="color: #9ca3af; padding-left: 20px;">
+                        <li><em>Event Hall:</em> Serviced by **four (4) 3.5 HP Floor-Mounted Units** (₱500,000 total) to manage intense occupant loads (up to 150 people)[cite: 3].</li>
+                        <li><em>Conference Room 2:</em> Equipped with a **1.5 HP Wall-Mounted Unit** (₱45,000)[cite: 3].</li>
+                        <li><em>Office of the President:</em> Conditioned via a **1.0 HP Wall-Mounted Unit** (₱30,000)[cite: 3].</li>
+                        <li><em>Cooling Load Total:</em> **293,661.33 BTU/hr** (including 10% safety factor), equivalent to **24.47 TOR**[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Cooling Load Calculation Highlights -->
+                <section id="cooling-load" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Cooling Load Calculation Highlights</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 20px;">
+                        Thermal loads were methodically computed considering envelope conduction, solar radiation through glass fenestrations, internal heat gains (lighting, electrical equipment, appliances), and outdoor ventilation requirements based on ASHRAE guidelines[cite: 3].
+                    </p>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; text-align: left; color: #d1d5db; font-size: 0.95rem;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 12px; color: #38bdf8;">Building Level</th>
+                                    <th style="padding: 12px; color: #38bdf8;">Grand Coil Load (BTU/hr)[cite: 3]</th>
+                                    <th style="padding: 12px; color: #38bdf8;">Equivalent Tonnage (TR)[cite: 3]</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>First Floor</strong></td>
+                                    <td style="padding: 12px;">151,605.84[cite: 3]</td>
+                                    <td style="padding: 12px;">12.63[cite: 3]</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>Second Floor</strong></td>
+                                    <td style="padding: 12px;">74,152.99[cite: 3]</td>
+                                    <td style="padding: 12px;">6.17[cite: 3]</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>Third Floor</strong></td>
+                                    <td style="padding: 12px;">293,661.33[cite: 3]</td>
+                                    <td style="padding: 12px;">24.47[cite: 3]</td>
+                                </tr>
+                                <tr style="background: rgba(56, 189, 248, 0.05);">
+                                    <td style="padding: 12px;"><strong>Grand Total Building Load</strong></td>
+                                    <td style="padding: 12px;"><strong>519,420.16 BTU/hr</strong>[cite: 3]</td>
+                                    <td style="padding: 12px;"><strong>43.28 TR</strong>[cite: 3]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Methodology & Tools -->
+                <section id="methodology" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Methodology & Tools <em>(AutoCAD, ASHRAE standards)</em></h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>AutoCAD Drafting:</strong> Developed precise 2D floor plans detailing spatial dimensions, lighting fixtures, and refrigerant piping routes linking indoor Fan Coil Units (FCUs) to outdoor Air-Cooled Condensing Units (ACCUs)[cite: 3].</li>
+                        <li><strong>ASHRAE Cooling Load Estimation:</strong> Applied CLTD/CLF and sol-air temperature methodologies for wall/roof heat transfer, solar heat gain factors (SHGF), and internal heat gains[cite: 3].</li>
+                        <li><strong>Equipment Specification & Costing:</strong> Compiled a detailed Bill of Materials featuring LG Dual Inverter split and floor-mounted systems totaling **₱955,000** for equipment[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Results & Performance Validation -->
+                <section id="validation" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Results & Performance Summary</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        The system design successfully satisfies the dual requirements of thermal comfort and energy efficiency. By utilizing dual-inverter compressor technology, the cooling units dynamically adjust compressor speeds to match fluctuating room thermal loads, yielding up to 40% energy savings compared to standard non-inverter setups while maintaining strict indoor operative setpoints in compliance with ASHRAE Standard 55[cite: 3].
+                    </p>
+                </section>
+
+                <!-- Conclusions & Recommendations -->
+                <section id="conclusions" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Conclusions & Recommendations</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        The HVAC design for the Tagaytay commercial building confirms that zoned inverter systems provide an optimal balance of capital cost, operational reliability, and environmental compliance[cite: 3]. Future enhancements should incorporate low-Global Warming Potential (GWP) refrigerants like R-1234yf or CO2 (R-744), integrate solar PV renewable energy sources, and deploy a Building Energy Management System (BEMS) for automated optimization[cite: 3].
+                    </p>
+                </section>
+
+                <!-- Technical Highlights -->
+                <section id="highlights" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Technical Highlights</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Comprehensive 3-storey AutoCAD layouts mapping precise refrigerant routing and equipment positioning[cite: 3].</li>
+                        <li>Rigorous ASHRAE cooling load calculations accounting for high-altitude highland microclimates[cite: 3].</li>
+                        <li>Closed-cell elastomeric foam insulation strategy eliminating condensation and mold risks under high humidity[cite: 3].</li>
+                    </ul>
+                </section>
+
+                <!-- Skills Applied -->
+                <section id="skills" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Skills Applied</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>HVAC System Design & Psychrometric Analysis[cite: 3].</li>
+                        <li>Computer-Aided Design (AutoCAD 2D Architectural & Piping Layout Drafting)[cite: 3].</li>
+                        <li>Engineering Economics, Cost Estimation, and Equipment Sizing[cite: 3].</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
