@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of a Single-Buoy Wave Energy Converter | Carlo James A. Ungria</title>
+</head>
+<body style="background-color: #0b0f19; color: #f3f4f6; font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 40px 20px;">
+
+    <div class="container" style="max-width: 1100px; margin: 0 auto;">
+        
+        <!-- Back Button -->
+        <a href="index.html" style="display: inline-block; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #f3f4f6; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 500; margin-bottom: 30px;">
+            &larr; Back to Portfolio
+        </a>
+
+        <!-- Tags & Title Header -->
+        <div style="margin-bottom: 40px;">
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <span style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Mechanical Engineering & Ocean Energy</span>
+                <span style="background: rgba(34, 197, 94, 0.1); color: #22c55e; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Completed</span>
+                <span style="background: rgba(255, 255, 255, 0.05); color: #9ca3af; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">SolidWorks • Electromagnetic Design • Prototype Testing</span>
+            </div>
+            <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: #ffffff; margin-bottom: 15px; line-height: 1.2;">
+                Design of a Single-Buoy Wave Energy Converter for Enhanced Power Generation
+            </h1>
+            <p style="font-size: 1.1rem; color: #9ca3af;">
+                Capstone Engineering Design Project — End-to-End Renewable Ocean Energy & Linear Generator Case Study[cite: 4]
+            </p>
+        </div>
+
+        <!-- Layout Grid: Table of Contents on Left, Content on Right -->
+        <div style="display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: start;" class="case-study-grid">
+            
+            <!-- Left Sidebar: Contents Matching Exact Flow -->
+            <div style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 25px; position: sticky; top: 20px;">
+                <h3 style="color: #ffffff; font-size: 1.1rem; margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Contents</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+                    <li><a href="#executive-summary" style="color: #9ca3af; text-decoration: none;">Executive Summary</a></li>
+                    <li><a href="#problem-statement" style="color: #9ca3af; text-decoration: none;">Problem Statement</a></li>
+                    <li><a href="#project-background" style="color: #9ca3af; text-decoration: none;">Project Background & Context</a></li>
+                    <li><a href="#objectives" style="color: #9ca3af; text-decoration: none;">Objectives</a></li>
+                    <li><a href="#constraints" style="color: #9ca3af; text-decoration: none;">Design Constraints & Criteria</a></li>
+                    <li><a href="#alternative-1" style="color: #9ca3af; text-decoration: none;">Design Alternative 1 (SISBEC)</a></li>
+                    <li><a href="#alternative-2" style="color: #9ca3af; text-decoration: none;">Design Alternative 2 (HI-SEC)</a></li>
+                    <li><a href="#trade-off" style="color: #9ca3af; text-decoration: none;">Evaluation & Trade-Off Analysis <em>(to compare your alternatives against your criteria)</em></a></li>
+                    <li><a href="#final-design" style="color: #9ca3af; text-decoration: none;">Selected Final Design</a></li>
+                    <li><a href="#methodology" style="color: #9ca3af; text-decoration: none;">Methodology & Tools <em>(e.g., SolidWorks, prototyping, calculations)</em></a></li>
+                    <li><a href="#validation" style="color: #9ca3af; text-decoration: none;">Results & Performance Validation</a></li>
+                    <li><a href="#conclusions" style="color: #9ca3af; text-decoration: none;">Conclusions & Recommendations</a></li>
+                    <li><a href="#highlights" style="color: #9ca3af; text-decoration: none;">Technical Highlights</a></li>
+                    <li><a href="#skills" style="color: #9ca3af; text-decoration: none;">Skills Applied</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Main Content Area -->
+            <div style="display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Executive Summary -->
+                <section id="executive-summary" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Executive Summary</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 20px;">
+                        The Philippines relies heavily on non-renewable energy sources for 79% of its needs, creating severe energy security vulnerabilities and expensive electricity[cite: 4]. This capstone project designs, simulates, and constructs a single-buoy Wave Energy Converter (WEC) featuring a centralized linear electromagnetic generator[cite: 4]. By optimizing the stator-translator interface with an opposed-pole neodymium configuration and ferromagnetic flux concentrators, the prototype successfully converts wave-induced motion into reliable electrical energy, generating an average power output equivalent to 4.81 kW per day when projected for continuous operation[cite: 4].
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 25px;">
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">Design 1 (SISBEC)</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Selected Optimal Design[cite: 4]</div>
+                        </div>
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">1.392 V</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Average Induced Voltage[cite: 4]</div>
+                        </div>
+                        <div style="background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; text-align: center;">
+                            <div style="color: #38bdf8; font-size: 1.4rem; font-weight: 700;">4.81 kW/day</div>
+                            <div style="color: #9ca3af; font-size: 0.85rem; margin-top: 5px;">Projected Power Output[cite: 4]</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Problem Statement -->
+                <section id="problem-statement" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Problem Statement</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        The Philippines faces high electricity costs and high dependency on imported fossil fuels, leaving the energy sector vulnerable to global price fluctuations[cite: 4]. While the country possesses vast unexploited coastal wave energy potential, traditional single-buoy WECs primarily capture vertical heave motion, resulting in low capacity factors, inconsistent power output under irregular seas, and high vulnerability to structural damage in harsh marine environments[cite: 4].
+                    </p>
+                </section>
+
+                <!-- Project Background & Context -->
+                <section id="project-background" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Project Background & Context</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        With over 36,000 kilometers of coastline, the Philippines features abundant marine renewable energy potential[cite: 4]. Coastal regions like Baler, Aurora exhibit favorable wave characteristics with average wave heights of 1.65 to 1.70 m and predominant wave periods of 7 to 8 seconds[cite: 4]. Harnessing this indigenous resource through an optimized, durable, and localized wave energy converter provides a dependable renewable energy solution for off-grid and coastal communities[cite: 4].
+                    </p>
+                </section>
+
+                <!-- Objectives -->
+                <section id="objectives" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Objectives</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Design a single-buoy WEC system with at least 1.5 kW per day capacity optimized for relative motion in the buoy[cite: 4].</li>
+                        <li>Integrate a centralized Power Take-Off (PTO) mechanism, specifically a vertical linear generator, and determine mechanical-to-electrical conversion performance[cite: 4].</li>
+                        <li>Construct a scaled physical prototype and perform wave tank experiments under controlled conditions to validate analytical results[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Design Constraints & Criteria -->
+                <section id="constraints" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Design Constraints & Criteria</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>Electromagnetic Yield:</strong> Maximize flux linkage and induced EMF using high-energy permanent magnets and structured core segmentation[cite: 4].</li>
+                        <li><strong>Marine Durability:</strong> Utilize corrosion-resistant materials (such as 316L stainless steel and marine-grade alloys) to withstand harsh hydrodynamic environments[cite: 4].</li>
+                        <li><strong>Cost-Effectiveness:</strong> Prioritize locally accessible materials and straightforward fabrication methods to ensure economic viability for coastal deployment[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Design Alternative 1 -->
+                <section id="alternative-1" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Design Alternative 1: SISBEC (Selected)</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 15px;">
+                        <strong>Seawall-Integrated Single-Buoy Energy Converter:</strong> Mounts the linear generator housing vertically via a rigid cantilevered truss frame anchored directly to a concrete seawall, harnessing vertical wave heave without offshore mooring complexity[cite: 4].
+                    </p>
+                    <ul style="color: #9ca3af; padding-left: 20px;">
+                        <li><em>Pros:</em> Absolute stationary reference frame ensuring 100% heave transfer; wave reflection amplification from seawall; eliminated subsea mooring costs; simplified maintenance[cite: 4].</li>
+                        <li><em>Cons:</em> Vulnerability to extreme tidal variations and severe horizontal impact loading from breaking storm waves[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Design Alternative 2 -->
+                <section id="alternative-2" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Design Alternative 2: HI-SEC</h2>
+                    <p style="line-height: 1.7; color: #d1d5db; margin-bottom: 15px;">
+                        <strong>Horizontally Integrated Seawall Energy Converter:</strong> Engineered to capture the horizontal push-pull surge forces of nearshore waves along the X-axis[cite: 4].
+                    </p>
+                    <ul style="color: #9ca3af; padding-left: 20px;">
+                        <li><em>Pros:</em> Harnesses powerful horizontal surge forces; low visual profile; lower center of gravity reducing structural moment stress[cite: 4].</li>
+                        <li><em>Cons:</em> High mechanical complexity (requires linkages/gearboxes to convert back-and-forth surge into induction); severe seal integrity risks against saltwater ingress; high tidal sensitivity[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Evaluation & Trade-Off Analysis -->
+                <section id="trade-off" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Evaluation & Trade-Off Analysis <em>(to compare your alternatives against your criteria)</em></h2>
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; text-align: left; color: #d1d5db; font-size: 0.95rem;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <th style="padding: 12px; color: #38bdf8;">Criteria</th>
+                                    <th style="padding: 12px; color: #38bdf8;">Design 1 (SISBEC - Selected)[cite: 4]</th>
+                                    <th style="padding: 12px;">Design 2 (HI-SEC)[cite: 4]</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>Total Cost</strong></td>
+                                    <td style="padding: 12px;">₱31,203.00[cite: 4]</td>
+                                    <td style="padding: 12px;">₱36,203.00[cite: 4]</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>Total Weight</strong></td>
+                                    <td style="padding: 12px;">82.98 kg[cite: 4]</td>
+                                    <td style="padding: 12px;">86.98 kg[cite: 4]</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <td style="padding: 12px;"><strong>Force Inflicted to Buoy</strong></td>
+                                    <td style="padding: 12px;">12.15 kN[cite: 4]</td>
+                                    <td style="padding: 12px;">3.04 kN[cite: 4]</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 12px;"><strong>Theoretical Power Output</strong></td>
+                                    <td style="padding: 12px;"><strong>90.88 kW-hr/day</strong>[cite: 4]</td>
+                                    <td style="padding: 12px;">6.31 kW-hr/day[cite: 4]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Selected Final Design -->
+                <section id="final-design" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Selected Final Design</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        <strong>Design Alternative 1 (SISBEC)</strong> was chosen for final fabrication[cite: 4]. It offers a 13.8% cost reduction compared to Design 2 while delivering vastly superior theoretical power output and robust structural integration through high-grade stainless steel and aluminum alloy components[cite: 4].
+                    </p>
+                </section>
+
+                <!-- Methodology & Tools -->
+                <section id="methodology" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Methodology & Tools <em>(e.g., SolidWorks, prototyping, calculations)</em></h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li><strong>SolidWorks 3D Modeling:</strong> Utilized for component design, assembly visualization, and structural interference analysis[cite: 4].</li>
+                        <li><strong>Electromagnetic & Thermodynamic Calculations:</strong> Applied Faraday’s Law of Induction, pole pitch formulations ($P_{m} = (2 \times t_{mag}) + t_{spacer}$), and internal resistance equations[cite: 4].</li>
+                        <li><strong>Prototype Wave Tank Testing:</strong> Conducted multi-trial physical experiments under controlled wave conditions to measure actual voltage, current, and power generation[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Results & Performance Validation -->
+                <section id="validation" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Results & Performance Validation</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        Experimental testing across multiple trials under a 7 cm wave height yielded a stable average induced voltage of **1.392 V** and a current of **0.04 A**, resulting in an average measured power output of **0.05568 W** (projected to **4.81 kW/day** for continuous operation)[cite: 4].
+                    </p>
+                </section>
+
+                <!-- Conclusions & Recommendations -->
+                <section id="conclusions" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Conclusions & Recommendations</h2>
+                    <p style="line-height: 1.7; color: #d1d5db;">
+                        The study successfully proved that an opposed-pole neodymium translator with ferromagnetic spacers effectively directs magnetic flux radially toward stator windings, eliminating dead zones and validating energy conversion efficiency[cite: 4]. Future iterations should incorporate thinner composite housing materials to reduce air-gap magnetic resistance, integrate low-friction linear bearings to minimize sliding friction, and use automated winding systems to prevent phase cancellation[cite: 4].
+                    </p>
+                </section>
+
+                <!-- Technical Highlights -->
+                <section id="highlights" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Technical Highlights</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Centralized tubular linear generator with opposed-pole N35/N42 neodymium configuration[cite: 4].</li>
+                        <li>Ferromagnetic flux concentrators (steel spacers) eliminating magnetic dead zones[cite: 4].</li>
+                        <li>Rigid seawall-integrated cantilever architecture avoiding complex offshore mooring lines[cite: 4].</li>
+                    </ul>
+                </section>
+
+                <!-- Skills Applied -->
+                <section id="skills" style="background: #111827; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 35px;">
+                    <h2 style="color: #ffffff; margin-top: 0; font-size: 1.5rem; margin-bottom: 20px;">Skills Applied</h2>
+                    <ul style="line-height: 1.8; color: #d1d5db; padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Electromechanical Systems & Electromagnetic Induction Design[cite: 4].</li>
+                        <li>Computer-Aided Engineering (SolidWorks 3D Modeling & Assembly Drafting)[cite: 4].</li>
+                        <li>Experimental Prototyping, Wave Tank Testing, and Data Analysis[cite: 4].</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
